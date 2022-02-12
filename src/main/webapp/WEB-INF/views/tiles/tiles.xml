@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+   <!-- <definition name="landing" template="/WEB-INF/views/landing.jsp"></definition> -->
+   
+   <definition name="user.login" template="/WEB-INF/views/login.jsp"></definition> 
+   <definition name="user.landing" template="/WEB-INF/views/landing.jsp"></definition> 
+   <definition name="user.termscondition" template="/WEB-INF/views/termscondition.jsp"></definition>
+   <definition name="user.privacypolicy" template="/WEB-INF/views/privacy.jsp"></definition>
+   
+   <definition name="user.register" template="/WEB-INF/views/register.jsp"></definition> 
+   
+  
+    <definition name="template-def" template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value="Welcome Page" />
+		<put-attribute name="header" value="/WEB-INF/views/tiles/templates/defaultHeader.jsp" /> 
+ 		<!-- <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/defaultMenu.jsp" /> -->
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/templates/defaultFooter.jsp" /> 
+   </definition> 
+   
+    <!-- User Screens mapping (Customer) --> 
+    
+    <definition name="master.userhome" extends="template-def">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/WEB-INF/views/customer/newBooking.jsp" />  
+   </definition>
+   
+    <definition name="master.usermyprofile" extends="template-def">  
+       <put-attribute name="title" value="My Profile" />  
+       <put-attribute name="body" value="/WEB-INF/views/customer/userProfile.jsp" />  
+   </definition> 
+   
+    <definition name="master.usermycompany" extends="template-def">  
+       <put-attribute name="title" value="My Company" />  
+       <put-attribute name="body" value="/WEB-INF/views/customer/userAddCompany.jsp" />  
+   </definition> 
+  
+   <definition name="master.transsearchresult" extends="template-def">  
+       <put-attribute name="title" value="Transportation Details" />  
+       <put-attribute name="body" value="/WEB-INF/views/customer/searchResults.jsp" />  
+   </definition> 
+   
+    <definition name="master.userdashboard" extends="template-def">  
+       <put-attribute name="title" value="Dashboard" />  
+       <put-attribute name="body" value="/WEB-INF/views/customer/userDashboard.jsp" />  
+   </definition> 
+   
+    <!-- User Screens mapping (Customer)--> 
+    
+    <!-- Admin Screens mapping-->
+     
+    <definition name="master.adminuploadrate" extends="template-def">  
+       <put-attribute name="title" value="Upload Rate" />  
+       <put-attribute name="body" value="/WEB-INF/views/admin/uploadRate.jsp" />  
+    </definition>
+    
+    <definition name="master.adminProfile" extends="template-def">  
+       <put-attribute name="title" value="My Profile" />  
+       <put-attribute name="body" value="/WEB-INF/views/admin/adminProfile.jsp" />  
+    </definition>
+    
+    <definition name="master.adminuploadoffer" extends="template-def">  
+       <put-attribute name="title" value="Upload Offer" />  
+       <put-attribute name="body" value="/WEB-INF/views/admin/uploadOffer.jsp" />  
+    </definition>
+    
+    <definition name="master.adminUserloginlog" extends="template-def">  
+       <put-attribute name="title" value="Login Logs" />  
+       <put-attribute name="body" value="/WEB-INF/views/admin/loginLog.jsp" />  
+    </definition>
+   
+   <definition name="master.adminDashboard" extends="template-def">  
+       <put-attribute name="title" value="My Dashboard" />  
+       <put-attribute name="body" value="/WEB-INF/views/admin/adminDashboard.jsp" />  
+    </definition>
+    
+    <definition name="master.adminLoadAds" extends="template-def">  
+       <put-attribute name="title" value="Upload Ads" />  
+       <put-attribute name="body" value="/WEB-INF/views/admin/uploadAds.jsp" />  
+    </definition>
+    
+    <definition name="master.adminFeedback" extends="template-def">  
+       <put-attribute name="title" value="Feedback" />  
+       <put-attribute name="body" value="/WEB-INF/views/admin/adminFeedback.jsp" />  
+    </definition>
+    
+     <definition name="master.adminCountryReq" extends="template-def">  
+       <put-attribute name="title" value="Country Requirment" />  
+       <put-attribute name="body" value="/WEB-INF/views/admin/adminCountryReq.jsp" />  
+    </definition>
+    
+    <definition name="master.forwarderSetup" extends="template-def">  
+       <put-attribute name="title" value="Forwarder Setup" />  
+       <put-attribute name="body" value="/WEB-INF/views/admin/forwarderSetup.jsp" />  
+    </definition>
+    
+    <definition name="master.carrierSetup" extends="template-def">  
+       <put-attribute name="title" value="Carrier Setup" />  
+       <put-attribute name="body" value="/WEB-INF/views/admin/carrierSetup.jsp" />  
+    </definition>
+    <!--Admin Screen mapping  -->
+    
+    <!--Forwarder Screen mapping  -->
+    <definition name="forwarder.forwarderHome" extends="template-def">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/forwarder/forwarderHome.jsp" />  
+    </definition>
+    
+    <definition name="forwarder.myprofile" extends="template-def">  
+       <put-attribute name="title" value="My Profile" />  
+       <put-attribute name="body" value="/WEB-INF/views/forwarder/forwarderProfile.jsp" />  
+    </definition>
+    
+    <definition name="forwarder.mycompany" extends="template-def">  
+       <put-attribute name="title" value="My Company" />  
+       <put-attribute name="body" value="/WEB-INF/views/forwarder/forwarderAddCompany.jsp" />  
+    </definition>
+    
+    <definition name="forwarder.myalerts" extends="template-def">  
+       <put-attribute name="title" value="My Alerts" />  
+       <put-attribute name="body" value="/WEB-INF/views/forwarder/forwarderAlerts.jsp" />  
+    </definition>
+    
+      <definition name="forwarder.mydashboard" extends="template-def">  
+       <put-attribute name="title" value="My Dashboard" />  
+       <put-attribute name="body" value="/WEB-INF/views/forwarder/forwarderDashboard.jsp" />  
+    </definition>
+    
+    <!--Forwarder Screen mapping  -->
+  
+</tiles-definitions>

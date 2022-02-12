@@ -1,0 +1,35 @@
+#error_block{
+	position: fixed;
+    display: none;
+    background: #e4bebe;
+    padding: 8px 20px;
+    top: 50px;
+    border: 1px solid #b98585;
+    color: #8c1b1b;
+    font-weight: 600;
+    border-radius: 4px;
+    /* left: 0; */
+    right: 48px;
+    width: 342px;
+    /* margin: auto; */
+    text-align: center;
+    z-index: 10100;
+}
+#success_block{
+	position: fixed;
+    display: none;
+    background: #bfe4be;
+    padding: 8px 20px;
+    top: 50px;
+    border: 1px solid #86b985;
+    color: #172f19;
+    font-weight: 600;
+    border-radius: 4px;
+    /* left: 0; */
+    right: 48px;
+    width: 342px;
+    /* margin: auto; */
+    text-align: center;
+    z-index: 10100;
+}
+
